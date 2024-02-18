@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Probelm 5</title>
+</head>
+<body>
+<h2>Times Table</h2>
+<div id="timesTable"></div>
+<script>
+function displayTimesTable(number) {
+    var displayArea = document.getElementById("timesTable");
+    displayArea.innerHTML = ''; // Clear previous content
+    for (var i = 1; i <= 10; i++) {
+        displayArea.innerHTML += number + " x " + i + " = " + (number * i) + "<br>";
+    }
+}
+
+displayTimesTable(5);
+</script>
+</body>
+</html>

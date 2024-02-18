@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4</title>
+</head>
+<body>
+    <script>
+        var from = parseInt(prompt("Enter the start of the range:"), 10);
+        var to = parseInt(prompt("Enter the end of the range:"), 10);
+        var sum = 0;
+
+        document.write("Odd numbers in the range: ");
+        for (var i = from; i <= to; i++) {
+            sum += i;
+            if (i % 2 !== 0) {
+                document.write(i + " ");
+            }
+        }
+    
+        document.write("<br>Sum of the numbers in the range: " + sum);
+    </script>
+</body>
+</html>
